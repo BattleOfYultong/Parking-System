@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+:root {
+  --background-color: #f1f1f1;
+  --headtext-color: black;
+  --container-color: #011f57;
+  --transition: 0.3s;
+  --transform: scale(1.1);
+  --normal-text: rgb(255, 255, 255);
+  --outline-color: rgb(3, 94, 94);
+  --button-color: rgb(3, 94, 94);
+  --button-textcolor: rgb(255, 255, 255);
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  padding: 10px;
+  position: absolute;
+}
+nav h1 {
+  color: var(--normal-text);
+  font-size: 3em;
+  margin-left: 10px;
+}
+form {
+  width: 350px;
+  min-height: 60vh;
+  max-height: auto;
+  background-color: var(--container-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+form h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--normal-text);
+}
+form .input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+form .input-wrapper .inputbox input {
+  padding: 7px;
+  width: 250px;
+  outline-color: var(--outline-color);
+}
+form .input-wrapper .inputsubmit input {
+  background-color: rgb(3, 94, 94);
+  border: none;
+  padding: 10px;
+  color: var(--button-textcolor);
+  width: 250px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+form .input-wrapper .inputsubmit input:hover {
+  transform: var(--transform);
+}
+form .input-wrapper .inputregister a {
+  text-decoration: none;
+  color: var(--normal-text);
+}
+.error-message {
+  color: red;
+}
+form .input-wrapper .inputbox select {
+  padding: 7px;
+  width: 250px;
+  outline-color: var(--outline-color);
+}
